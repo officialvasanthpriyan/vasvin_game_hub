@@ -1,0 +1,177 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3a3f58;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #ff7f50; /* Light Coral */
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Intro Section */
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Team Section */
+.team-overview {
+    margin-bottom: 40px;
+}
+
+.team-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    margin-top: 50px;
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c35;
+}
+
+/* Footer */
+footer {
+    background-color: #3a3f58;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}

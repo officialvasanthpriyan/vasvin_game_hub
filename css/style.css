@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 60px; /* Ensure there's space at the bottom for the footer */
+}
+
+/* Header */
+header {
+    background-color: #1f2a37;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff7f50; /* Light Coral */
+}
+
+/* Main Section */
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.game-card img:hover {
+    transform: scale(1.1);
+}
+
+.game-card h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+    text-align: center;
+}
+
+.game-card p {
+    font-size: 1rem;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.game-card button {
+    background-color: #ff7f50; /* Light Coral */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.game-card button:hover {
+    background-color: #e67e22; /* Darker Coral */
+}
+
+/* Footer */
+footer {
+    background-color: #1f2a37;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .game-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .game-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,149 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1f2a37;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff7f50; /* Light Coral */
+}
+
+/* Main Customer Selection Section */
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Customer Cards */
+.customer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.customer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.customer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.customer-card:hover img {
+    transform: scale(1.1);
+}
+
+.customer-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+/* Footer */
+footer {
+    background-color: #1f2a37;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+/* Active Selection */
+.customer-card.selected {
+    border: 2px solid #ff7f50;
+    background-color: #ffe6d9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .customer-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+/* Make the entire card clickable */
+a.customer-card {
+    text-decoration: none;
+    display: block;
+}
+
+/* Ensure no text decoration or changes on hover */
+a.customer-card:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
